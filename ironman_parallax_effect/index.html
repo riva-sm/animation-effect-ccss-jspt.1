@@ -1,0 +1,106 @@
+<!doctype html>
+<html>
+
+<head>
+  <title>Parallax Effects Using GASP ScrollTrigger</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+  <section>
+    <img src="bg.jpg" id="bg">
+    <img src="moon.png" id="moon">
+    <img src="cloud1.png" id="cloud1">
+    <img src="cloud2.png" id="cloud2">
+    <img src="jet.png" id="jet">
+    <img src="ironman.png" id="ironman">
+  </section>
+  <div class="sec">
+    <div class="content">
+      <h2>My name is Tony Stark and I'm not afraid of you. </h2>
+      <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laudantium alias amet magni cupiditate minima
+        voluptatum aliquam eaque praesentium modi inventore quibusdam, dolores quia, sapiente ullam repellat fugiat
+        explicabo eveniet? Quo.
+        Sapiente sint eum quis, odio fugit distinctio unde voluptate iure aperiam cupiditate, ducimus necessitatibus
+        corrupti saepe nulla itaque asperiores voluptatibus. A necessitatibus numquam itaque dicta quod ex fugiat minima
+        cupiditate.
+        Quaerat aliquam ea ex consequatur et eaque, qui blanditiis ducimus. Incidunt, error rem quos dolore laborum sit
+        repudiandae odit impedit sapiente dolorum assumenda amet praesentium, beatae officia, accusantium officiis
+        reprehenderit!</p>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus molestias numquam sapiente corrupti,
+        exercitationem ullam, cumque odio dolorem aut, ad incidunt placeat magni totam inventore commodi debitis harum
+        atque expedita.
+        Architecto culpa aliquam eius facilis, deserunt neque? Eius aliquam doloremque ab voluptas dolorum accusamus,
+        commodi ea assumenda officiis eligendi cum facilis, temporibus modi quaerat, inventore velit quidem amet dolores
+        aut.
+      </p>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus molestias numquam sapiente corrupti,
+        exercitationem ullam, cumque odio dolorem aut, ad incidunt placeat magni totam inventore commodi debitis harum
+        atque expedita.
+        Architecto culpa aliquam eius facilis, deserunt neque? Eius aliquam doloremque ab voluptas dolorum accusamus,
+        commodi ea assumenda officiis eligendi cum facilis, temporibus modi quaerat, inventore velit quidem amet dolores
+        aut.
+      </p>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus molestias numquam sapiente corrupti,
+        exercitationem ullam, cumque odio dolorem aut, ad incidunt placeat magni totam inventore commodi debitis harum
+        atque expedita.
+        Architecto culpa aliquam eius facilis, deserunt neque? Eius aliquam doloremque ab voluptas dolorum accusamus,
+        commodi ea assumenda officiis eligendi cum facilis, temporibus modi quaerat, inventore velit quidem amet dolores
+        aut.
+      </p>
+    </div>
+  </div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.8.0/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.8.0/ScrollTrigger.min.js"></script>
+  <script>
+    gsap.to("#bg", {
+      scrollTrigger: {
+        scrub: true
+      },
+      y: 200,
+      scale: 1.5
+    })
+    gsap.to("#moon", {
+      scrollTrigger: {
+        scrub: true
+      },
+      x: -400,
+      scale: 2
+    })
+    gsap.to("#cloud1", {
+      scrollTrigger: {
+        scrub: true
+      },
+      x: -400,
+    })
+    gsap.to("#cloud2", {
+      scrollTrigger: {
+        scrub: true
+      },
+      x: 300,
+    })
+    gsap.to("#jet", {
+      scrollTrigger: {
+        scrub: true
+      },
+      x: 1000,
+      y: 200,
+      scale: 4
+    })
+    gsap.to("#ironman", {
+      scrollTrigger: {
+        scrub: true
+      },
+      x: 0,
+      y: -1800,
+      scale: 1,
+      rotate: -50,
+    })
+  </script>
+</body>
+
+</html>
